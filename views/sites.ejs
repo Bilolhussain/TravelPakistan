@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+    <div class = "container">
+        <header class="jumbotron">
+            <h1>This is Pets Page</h1>
+        </header>
+        
+        
+        <a href= "/sites/new">New Site</a>
+        
+        <% sites.forEach(function(sites){ %>
+            <div>
+                <h4><%= sites.name %> </h4>
+                <img src = "<%= sites.image %>">
+            </div>
+        <% }) %>
+    </div>
+
+<% include partials/footer%>
